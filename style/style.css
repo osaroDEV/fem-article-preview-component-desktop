@@ -1,0 +1,145 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 19%, 35%);
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  background-color: #fff;
+  border-radius: 0.5em;
+  overflow: hidden;
+  width: 900px;
+  min-width: 900px;
+  height: 260px;
+  display: flex;
+  flex-direction: row;
+}
+#container-image {
+  width: 50%;
+  height: 100%;
+}
+#caption {
+  margin: 1em;
+}
+#caption-header {
+  font-weight: 700;
+}
+#caption-header,
+#caption-paragraph {
+  margin-bottom: 2em;
+}
+#caption-paragraph {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+#main-image {
+  background-image: url("../images/drawers.jpg");
+  height: 260px;
+  width: auto;
+  background-size: cover;
+}
+#container-caption {
+  width: 550px;
+}
+#container-bioshare {
+  position: relative;
+  width: 100%;
+  height: 70px;
+}
+#author-bio {
+  position: absolute;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2.5em;
+}
+
+
+#author-bio img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#author-name {
+  font-weight: 700;
+}
+#author-date {
+  font-size: 0.8rem;
+}
+.sharebioC {
+  background-color: #eee;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+svg, #author-share p {
+  cursor: pointer;
+}
+.author-share {
+  position: fixed;
+  visibility: hidden;
+  width: 250px;
+  top: 340px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1em;
+  background-color: hsl(217, 19%, 35%);
+  color: #fff;
+  border-radius: 5px;
+}
+.author-share p {
+  font-size: 0.8rem;
+}
+.author-share::after {
+  content: '';
+  position: absolute;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  border-width: 10px;
+  border-style: solid;
+  top: 100%;
+}
+.visible {
+  visibility: visible;
+}
+/* .shareHover1 {
+  background-color: #eee;
+} */
+.shareHover2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.svgHover {
+  fill:#fff;
+}
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: tomato;
+  font-size: 1.2rem;
+}
